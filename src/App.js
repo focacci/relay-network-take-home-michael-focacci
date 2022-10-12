@@ -9,17 +9,26 @@ function App() {
 
   useEffect(() => {
     const url = "https://phl.carto.com/api/v2/sql?q=SELECT+*+FROM+qualified_voter_listing_2018_primary_by_ward&filename=qualified_voter_listing_2018_primary_by_ward&format=json&skipfields=cartodb_id";
+    
+    const processData = (data) => {
+      var rows = data["rows"].slice(0, 66);
+      var totals = data["rows"].slice(66);
+      setRows(rows);
+      setTotals(totals);
+    }
+  
     const fetchData = async () => {
       try {
         const res = await fetch(url);
         const json = await res.json();
         console.log(json);
-        setData(json);
+        processData(json);
       }
       catch (error) {
         console.log("Error fetching data:", error);
       }
     }
+
     fetchData();
   }, []);
 
