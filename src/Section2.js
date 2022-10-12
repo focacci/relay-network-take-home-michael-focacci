@@ -48,6 +48,9 @@ export default function Section2({ rows }) {
                         <th>%</th>
                     </tr>
                 </thead>
+                <tbody>
+                    <TableBody rows={rows} />
+                </tbody>
             </table>
         </div>
     )
