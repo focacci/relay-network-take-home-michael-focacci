@@ -1,6 +1,33 @@
 import React from 'react';
 
-export default function Section2() {
+function TableBody({rows}) {
+    if (rows) {
+        return (
+        rows.map(row =>
+            {
+                return (
+                    <tr>
+                        <td>{row["ward"]}</td>
+                        <td>{row["rep"]}</td>
+                        <td>{row["dem"]}</td>
+                        <td>{row["other_party"]}</td>
+                        <td>{row["male"]}</td>
+                        <td>{row["female"]}</td>
+                        <td>{row["unknown_sex"]}</td>
+                        <td>{row["black"]}</td>
+                        <td>{row["hispanic"]}</td>
+                        <td>{row["white"]}</td>
+                        <td>{row["other_race"]}</td>
+                        <td>{row["total"]}</td>
+                        <td>%</td>
+                    </tr> 
+                )
+            })
+        )
+    }
+}
+
+export default function Section2({ rows }) {
     return (
         <div>
             <table>
