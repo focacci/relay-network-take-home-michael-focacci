@@ -63,8 +63,11 @@ export default function Summary({ totals, segment }) {
 
     useEffect(() => {
         setSelSeg(segment);
-    }, [segment])
+    }, [segment]);
 
+    useEffect(() => {
+        setSelSegVoterCount(totals[selSeg]);
+    }, [selSeg]);
     return (
         <div>
             <p>Top Segment of All Voters: {segTitleMap[topSeg]} - {topSegVoterCount} - {formatAsPercent(topSegVoterPercent)}</p>
