@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import Section1 from './Section1';
-import Section2 from './Section2';
+import Summary from './Summary';
+import Table from './Table';
 
 function App() {
 
@@ -34,8 +34,8 @@ function App() {
 
   return (
     <div className="App">
-      <Section1 totals={totals}/>
-      <Section2 rows={rows}/>
+      <Summary totals={totals}/>
+      <Table rows={rows}/>
     </div>
   );
 }
