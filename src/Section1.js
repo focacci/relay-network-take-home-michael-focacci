@@ -1,7 +1,7 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 export default function Section1({ totals }) {
 
-export default function Section1() {
+    const [totalVoters, setTotalVoters] = useState(null);
     return (
         <div>
             <p>Top Segment of All Voters:</p>
