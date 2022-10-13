@@ -9,6 +9,19 @@ function App() {
   const [totals, setTotals] = useState(null);
   const [dropdownSelection, setDropdownSelection] = useState("");
 
+  const dropdownOptions = [
+    { label: "---", value: "" },
+    { label: "Republican", value: "rep" },
+    { label: "Democrat", value: "dem" },
+    { label: "Other Party", value: "other_party" },
+    { label: "Male", value: "male" },
+    { label: "Female", value: "female" },
+    { label: "Unknown Sex", value: "unknown_sex" },
+    { label: "Black", value: "black" },
+    { label: "Hispanic", value: "hispanic" },
+    { label: "White", value: "white" },
+    { label: "Other Race", value: "other_race" }
+  ];
   useEffect(() => {
     const url = "https://phl.carto.com/api/v2/sql?q=SELECT+*+FROM+qualified_voter_listing_2018_primary_by_ward&filename=qualified_voter_listing_2018_primary_by_ward&format=json&skipfields=cartodb_id";
     
