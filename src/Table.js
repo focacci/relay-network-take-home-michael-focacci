@@ -21,7 +21,7 @@ function TableBody({rows, segment}) {
                             <td>{row["white"]}</td>
                             <td>{row["other_race"]}</td>
                             <td>{row["total"]}</td>
-                            <td>{(segment == "") ? "%" : formatAsPercent((row[segment]/row["total"])*100)}</td>
+                            <td>{(segment === "") ? "%" : formatAsPercent((row[segment]/row["total"])*100)}</td>
                         </tr> 
                     )
                 }
