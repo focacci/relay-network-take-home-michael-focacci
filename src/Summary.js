@@ -35,7 +35,7 @@ export default function Summary({ totals, segment }) {
             setTopSegVoterCount(totals[topSeg]);
             setTopSegVoterPercent(formatAsPercent((topSegVoterCount/totalVoters)*100));
         }
-    });
+    }, [totals, topSeg, topSegVoterCount, totalVoters]);
 
     useEffect(() => {
         setSelSeg(segment);
@@ -49,7 +49,7 @@ export default function Summary({ totals, segment }) {
         else {
             setSelSegVoterCount("");
         }
-    }, [selSeg]);
+    }, [totals, selSeg]);
 
     useEffect(() => {
         if (selSeg != "") {
@@ -58,7 +58,7 @@ export default function Summary({ totals, segment }) {
         else {
             setSelSegVoterPercent("");
         }
-    }, [selSegVoterCount]);
+    }, [totalVoters, selSeg, selSegVoterCount]);
 
     return (
         <div>
