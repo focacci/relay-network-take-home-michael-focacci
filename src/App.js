@@ -12,7 +12,7 @@ function App() {
     
     const processData = (data) => {
       var rows = data["rows"].slice(0, 66);
-      var totals = data["rows"].slice(66);
+      var totals = data["rows"].slice(66)[0];
       setRows(rows);
       setTotals(totals);
     }
