@@ -29,7 +29,7 @@ export default function Section1({ totals }) {
             setTotalVoters(totals["total"]);
             setTopSeg(Object.keys(copy).reduce((a, b) => copy[a] > copy[b] ? a : b));
             setSegVoterCount(totals[topSeg]);
-            setSegVoterPercent((segVoterCount/totalVoters).toFixed(2));
+            setSegVoterPercent((segVoterCount/totalVoters)*100);
         }
     });
 
