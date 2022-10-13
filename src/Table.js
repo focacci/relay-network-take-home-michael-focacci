@@ -1,4 +1,5 @@
 import React from 'react';
+import { formatAsPercent } from './utils';
 
 function TableBody({rows}) {
     if (rows) {
