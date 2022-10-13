@@ -55,8 +55,8 @@ export default function Summary({ totals, segment }) {
             /* Update state variables to be rendered in the HTML text */
             setTotalVoters(totals["total"]);
             setTopSeg(Object.keys(copy).reduce((a, b) => copy[a] > copy[b] ? a : b));
-            setSegVoterCount(totals[topSeg]);
-            setSegVoterPercent((segVoterCount/totalVoters)*100);
+            setTopSegVoterCount(totals[topSeg]);
+            setTopSegVoterPercent((topSegVoterCount/totalVoters)*100);
         }
     });
 
