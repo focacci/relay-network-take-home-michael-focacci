@@ -67,8 +67,8 @@ export default function Summary({ totals, segment }) {
 
     return (
         <div>
-            <p>Top Segment of All Voters: {segTitleMap[topSeg]} - {segVoterCount} - {formatAsPercent(segVoterPercent)}</p>
-            <p>Percentage of All Voters that are segment:</p>
+            <p>Top Segment of All Voters: {segTitleMap[topSeg]} - {topSegVoterCount} - {formatAsPercent(topSegVoterPercent)}</p>
+            <p>Percentage of All Voters that are {segTitleMap[selSeg]}:</p>
         </div>
     );
 }
