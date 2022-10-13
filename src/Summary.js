@@ -56,7 +56,7 @@ export default function Summary({ totals, segment }) {
             setTotalVoters(totals["total"]);
             setTopSeg(Object.keys(copy).reduce((a, b) => copy[a] > copy[b] ? a : b));
             setTopSegVoterCount(totals[topSeg]);
-            setTopSegVoterPercent((topSegVoterCount/totalVoters)*100);
+            setTopSegVoterPercent(formatAsPercent((topSegVoterCount/totalVoters)*100));
         }
     });
 
@@ -69,13 +69,13 @@ export default function Summary({ totals, segment }) {
     }, [selSeg]);
 
     useEffect(() => {
-        setSelSegVoterPercent((selSegVoterCount/totalVoters)*100);
+        if (selSeg != "") {
     }, [selSegVoterCount]);
 
     return (
         <div>
-            <p>Top Segment of All Voters: {segTitleMap[topSeg]} - {topSegVoterCount} - {formatAsPercent(topSegVoterPercent)}</p>
-            <p>Percentage of All Voters that are {segTitleMap[selSeg]} - {selSegVoterCount} - {formatAsPercent(selSegVoterPercent)}</p>
+            <p>Top Segment of All Voters: {segTitleMap[topSeg]} - {topSegVoterCount} - {topSegVoterPercent}</p>
+            <p>Percentage of All Voters that are {segTitleMap[selSeg]} - {selSegVoterCount} - {selSegVoterPercent}</p>
         </div>
     );
 }
