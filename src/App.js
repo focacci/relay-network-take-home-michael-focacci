@@ -34,7 +34,7 @@ function App() {
 
   return (
     <div className="App">
-      <Section1 />
+      <Section1 totals={totals}/>
       <Section2 rows={rows}/>
     </div>
   );
