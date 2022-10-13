@@ -27,7 +27,7 @@ function TableBody({rows}) {
     }
 }
 
-export default function Section2({ rows }) {
+export default function Table({ rows }) {
     return (
         <div>
             <table>
