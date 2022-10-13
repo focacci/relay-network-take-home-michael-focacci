@@ -57,7 +57,7 @@ export default function Section1({ totals }) {
 
     return (
         <div>
-            <p>Top Segment of All Voters: {topSeg} - {segVoterCount} - {formatAsPercent(segVoterPercent)}</p>
+            <p>Top Segment of All Voters: {segTitleMap[topSeg]} - {segVoterCount} - {formatAsPercent(segVoterPercent)}</p>
             <p>Percentage of All Voters that are segment:</p>
         </div>
     );
