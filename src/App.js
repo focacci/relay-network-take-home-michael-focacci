@@ -24,7 +24,6 @@ function App() {
   ];
 
   const handleDropdownChange = (event) => {
-    console.log(event.target.value);
     setDropdownSelection(event.target.value);
   }
 
@@ -61,7 +60,7 @@ function App() {
         options={dropdownOptions}
         onChange={handleDropdownChange}
       />
-      <Summary totals={totals}/>
+      <Summary totals={totals} segment={dropdownSelection}/>
       <Table rows={rows}/>
     </div>
   );
