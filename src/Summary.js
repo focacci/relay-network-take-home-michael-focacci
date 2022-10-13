@@ -24,7 +24,7 @@ function formatAsPercent(num) {
 }
 
 
-export default function Summary({ totals }) {
+export default function Summary({ totals, segment }) {
 
     const [totalVoters, setTotalVoters] = useState(null);
     const [topSeg, setTopSeg] = useState(null);
