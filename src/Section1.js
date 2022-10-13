@@ -1,6 +1,14 @@
 import React, { useState, useEffect } from 'react'
 
 
+function formatAsPercent(num) {
+    return new Intl.NumberFormat('default', {
+      style: 'percent',
+      minimumFractionDigits: 2,
+      maximumFractionDigits: 2,
+    }).format(num / 100);
+}
+
 
 export default function Section1({ totals }) {
 
