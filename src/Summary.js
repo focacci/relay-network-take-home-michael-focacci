@@ -27,9 +27,14 @@ function formatAsPercent(num) {
 export default function Summary({ totals, segment }) {
 
     const [totalVoters, setTotalVoters] = useState(null);
+
     const [topSeg, setTopSeg] = useState(null);
-    const [segVoterCount, setSegVoterCount] = useState(null);
-    const [segVoterPercent, setSegVoterPercent] = useState(null);
+    const [topSegVoterCount, setTopSegVoterCount] = useState(null);
+    const [topSegVoterPercent, setTopSegVoterPercent] = useState(null);
+
+    const [selSeg, setSelSeg] = useState(segment);
+    const [selSegVoterCount, setSelSegVoterCount] = useState(null);
+    const [selSegVoterPercent, setSelSegVoterPercent] = useState(null);
 
     useEffect(() => {
         /* totals is initially 'null' when rendered in parent component.
