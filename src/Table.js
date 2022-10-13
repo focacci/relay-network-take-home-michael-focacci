@@ -1,7 +1,7 @@
 import React from 'react';
 import { formatAsPercent } from './utils';
 
-function TableBody({rows}) {
+function TableBody({rows, segment}) {
     if (rows) {
         return (
         rows.map(row =>
@@ -28,7 +28,7 @@ function TableBody({rows}) {
     }
 }
 
-export default function Table({ rows }) {
+export default function Table({ rows, segment }) {
     return (
         <div>
             <table>
@@ -50,7 +50,7 @@ export default function Table({ rows }) {
                     </tr>
                 </thead>
                 <tbody>
-                    <TableBody rows={rows} />
+                    <TableBody rows={rows} segment={segment} />
                 </tbody>
             </table>
         </div>

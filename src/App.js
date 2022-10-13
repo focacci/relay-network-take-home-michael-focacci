@@ -61,7 +61,7 @@ function App() {
         onChange={handleDropdownChange}
       />
       <Summary totals={totals} segment={dropdownSelection}/>
-      <Table rows={rows}/>
+      <Table rows={rows} segment={dropdownSelection}/>
     </div>
   );
 }
