@@ -64,12 +64,23 @@ export default function Summary({ totals, segment }) {
         setSelSeg(segment);
     }, [segment]);
 
+    /* The following effect hooks use if-else statements to handle the default empty selection */
     useEffect(() => {
-        setSelSegVoterCount(totals[selSeg]);
+        if (selSeg != "") {
+            setSelSegVoterCount(totals[selSeg]);
+        }
+        else {
+            setSelSegVoterCount("");
+        }
     }, [selSeg]);
 
     useEffect(() => {
         if (selSeg != "") {
+            setSelSegVoterPercent(formatAsPercent((selSegVoterCount/totalVoters)*100));
+        }
+        else {
+            setSelSegVoterPercent("");
+        }
     }, [selSegVoterCount]);
 
     return (
