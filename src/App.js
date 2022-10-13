@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Summary from './Summary';
 import Table from './Table';
+import Dropdown from './Dropdown';
 
 function App() {
 
