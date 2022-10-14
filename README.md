@@ -121,3 +121,29 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+<br></br>
+
+# What I Learned
+
+This project let me really get my hands dirty using ReactJS. I had enough prior experience with React to recognize how the project should be structured, but no practical experience actually building with it myself.
+
+1. Components
+
+    React enables developers to create reusable components within their app. For this project, I created three (3) components :
+    - Summary
+    - Table
+    - Dropdown
+
+    These components accepted properties (function arguments) from the top-level App. Through the top-level component I was able to bridge a connection between the three (3) children allowing them to interact with each other.
+
+2. Hooks
+
+    React uses hooks to change the app's state. For example, I used a `useEffect` hook to request data from the given API upon loading the page. Once the data was retrieved and processed, I used a `set` hook to change appropriate state variables. The state variables that were passed to child componts triggered their own `useEffect` hooks upon change at the top level.
+
+3. Testing
+
+    React has an extensive testing library. My tests were written using the following formula:
+    - Render the component to be tested
+    - Pass mock data to the component
+    - `expect` the output to be as expected
