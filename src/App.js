@@ -32,8 +32,9 @@ function App() {
     const url = "https://phl.carto.com/api/v2/sql?q=SELECT+*+FROM+qualified_voter_listing_2018_primary_by_ward&filename=qualified_voter_listing_2018_primary_by_ward&format=json&skipfields=cartodb_id";
 
     const processData = (data) => {
-      var rows = data["rows"].slice(0, 66);
-      var totals = data["rows"].slice(66)[0];
+      let len = data["rows"].length - 1;
+      var rows = data["rows"].slice(0, len);
+      var totals = data["rows"].slice(len)[0];
       setRows(rows);
       setTotals(totals);
     }
