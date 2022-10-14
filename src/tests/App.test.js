@@ -1,36 +1,29 @@
-import { render, screen } from '@testing-library/react';
+import React from "react";
+import { render, unmountComponentAtNode } from 'react-dom';
+
 import App from '../App';
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
-});
 
-test('Page has the proper title', () => {
 
-});
+describe("App", () => {
 
-test('Summary is displayed on page', () => {
+  let container = null;
 
-});
+  beforeEach(() => {
+    // setup a DOM element as a render target
+    container = document.createElement("div");
+    document.body.appendChild(container);
+  });
+  
+  afterEach(() => {
+    // cleanup on exiting
+    unmountComponentAtNode(container);
+    container.remove();
+    container = null;
+  });
 
-test('Table is displayed on page', () => {
 
-});
-
-test('Table has the correct headers', () => {
-
-});
-
-test('Data is fetched from the API', () => {
-
-});
-
-test('Data is used to populate the table', () => {
-
-});
-
-test('Data is used to correctly update the summary', () => {
-
+  it("renders correctly", () => {
+    render(<App />, container);
+  });
 });
