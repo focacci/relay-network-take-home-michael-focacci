@@ -1,7 +1,7 @@
 import React from 'react';
-import { formatAsPercent } from './utils';
+import { formatAsPercent } from '../utils';
 import { v4 as uuidv4 } from 'uuid';
-import './Table.css';
+import '../css/Table.css';
 
 function TableBody({rows, segment}) {
 

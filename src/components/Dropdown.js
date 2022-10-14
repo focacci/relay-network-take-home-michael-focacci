@@ -1,6 +1,6 @@
 import React from 'react';
 import { v4 as uuidv4 } from 'uuid';
-import './Dropdown.css';
+import '../css/Dropdown.css';
 
 export default function Dropdown({ label, value, options, onChange }) {
     return (

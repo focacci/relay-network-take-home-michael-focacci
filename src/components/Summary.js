@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { segTitleMap, formatAsPercent } from './utils';
-import './Summary.css';
+import { segTitleMap, formatAsPercent } from '../utils';
+import '../css/Summary.css';
 
 export default function Summary({ totals, segment }) {
 
