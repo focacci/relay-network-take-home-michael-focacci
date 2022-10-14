@@ -1,15 +1,35 @@
 import React, { useEffect, useState } from 'react';
-import Section1 from './Section1';
-import Section2 from './Section2';
+import Summary from './Summary';
+import Table from './Table';
+import Dropdown from './Dropdown';
 
 function App() {
 
   const [rows, setRows] = useState(null);
   const [totals, setTotals] = useState(null);
+  const [dropdownSelection, setDropdownSelection] = useState("");
+
+  const dropdownOptions = [
+    { label: "---", value: "" },
+    { label: "Republican", value: "rep" },
+    { label: "Democrat", value: "dem" },
+    { label: "Other Party", value: "other_party" },
+    { label: "Male", value: "male" },
+    { label: "Female", value: "female" },
+    { label: "Unknown Sex", value: "unknown_sex" },
+    { label: "Black", value: "black" },
+    { label: "Hispanic", value: "hispanic" },
+    { label: "White", value: "white" },
+    { label: "Other Race", value: "other_race" }
+  ];
+
+  const handleDropdownChange = (event) => {
+    setDropdownSelection(event.target.value);
+  }
 
   useEffect(() => {
     const url = "https://phl.carto.com/api/v2/sql?q=SELECT+*+FROM+qualified_voter_listing_2018_primary_by_ward&filename=qualified_voter_listing_2018_primary_by_ward&format=json&skipfields=cartodb_id";
-    
+
     const processData = (data) => {
       var rows = data["rows"].slice(0, 66);
       var totals = data["rows"].slice(66)[0];
@@ -34,8 +54,14 @@ function App() {
 
   return (
     <div className="App">
-      <Section1 totals={totals}/>
-      <Section2 rows={rows}/>
+      <Dropdown 
+        label="Select a voter segment"
+        value={dropdownSelection}
+        options={dropdownOptions}
+        onChange={handleDropdownChange}
+      />
+      <Summary totals={totals} segment={dropdownSelection}/>
+      <Table rows={rows} segment={dropdownSelection}/>
     </div>
   );
 }
