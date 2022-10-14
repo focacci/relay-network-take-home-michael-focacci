@@ -1,6 +1,7 @@
 # Relay Network Take Home Project
 ## Author: Michael Focacci
 ## [Link to GitHub Repository](https://github.com/focacci/relay-network-take-home-michael-focacci)
+## [Project requirements](REQUIREMENTS.md)
 <br></br>
 
 # About
@@ -10,7 +11,6 @@ My objective with this project is to demonstrate that my ability to organize, pl
 
 Assigned to me on Monday, October 10, 2022, I am on track to submit this assignment complete with mock-up diagrams, test scripts, and appropriate documentation by Friday, October 14, 2022.
 
-Please find the project requirements [here](REQUIREMENTS.md).
 <br></br>
 
 # Contributing
