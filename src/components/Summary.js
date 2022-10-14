@@ -39,7 +39,9 @@ export default function Summary({ totals, segment }) {
     }, [totals, topSeg, topSegVoterCount, totalVoters]);
 
     useEffect(() => {
-        setSelSeg(segment);
+        if (segment) {
+            setSelSeg(segment);
+        }
     }, [segment]);
 
     /* The following effect hooks use if-else statements to handle the default empty selection */
