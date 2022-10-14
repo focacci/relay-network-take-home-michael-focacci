@@ -1,0 +1,566 @@
+commit 43d57f70883570737b02eba685f3471ae73d954b
+Author: Michael Focacci <michaelfocacci@gmail.com>
+Date:   Fri Oct 14 16:25:54 2022 -0400
+
+    Add `What I Learned` section #21
+
+commit 505780136a06968baf80bd24eb4d49b1daeba99b
+Author: Michael Focacci <michaelfocacci@gmail.com>
+Date:   Fri Oct 14 16:25:10 2022 -0400
+
+    Add `About` section describing the project and my process #21
+
+commit cf2af9dc049f77b749da00f46d76ecdf92288659
+Author: Michael Focacci <michaelfocacci@gmail.com>
+Date:   Fri Oct 14 16:24:35 2022 -0400
+
+    Move requirements to top of page #21
+
+commit a4eea26e44b906af579734f3114d2052d79b1d0d
+Merge: c2f7189 e1b00bf
+Author: Michael Focacci <michaelfocacci@gmail.com>
+Date:   Fri Oct 14 15:14:51 2022 -0400
+
+    Merge branch 'dev' into update-readme-issue#21
+
+commit e1b00bf216aeb23f75c4c911c6d3af3c8ddadea7
+Author: Michael Focacci <michaelfocacci@gmail.com>
+Date:   Fri Oct 14 15:11:23 2022 -0400
+
+    Component tests #13
+
+commit c598f2648068cb49a62678d21ccde81a36cd6c95
+Author: Michael Focacci <michaelfocacci@gmail.com>
+Date:   Fri Oct 14 15:11:06 2022 -0400
+
+    Add `data-testid` tags for retrieval during testing #13
+
+commit 56b18290015471d701c5065a4f090d3aeb42b699
+Author: Michael Focacci <michaelfocacci@gmail.com>
+Date:   Fri Oct 14 15:10:18 2022 -0400
+
+    Add `id` tags to text for retrieval during testing #13
+
+commit dbc476abd490754e03090c17c2031fe51f6d5c2a
+Author: Michael Focacci <michaelfocacci@gmail.com>
+Date:   Fri Oct 14 15:09:44 2022 -0400
+
+    Check if segment exists before calling set hook #13
+    
+    Allows component to load without segment prop
+
+commit 72950807e07ee291fb5c400e5601a4946d374d36
+Author: Michael Focacci <michaelfocacci@gmail.com>
+Date:   Fri Oct 14 15:09:01 2022 -0400
+
+    Init selSeg to empty string #13
+    
+    Allows component to load if no segment property is passed
+
+commit b04db96c548c1178398c23fe06970db2fffb0e72
+Author: Michael Focacci <michaelfocacci@gmail.com>
+Date:   Fri Oct 14 15:06:47 2022 -0400
+
+    App tests #13
+
+commit b7355b70294773129f3f50c28c4e9bbef6b1c28b
+Author: Michael Focacci <michaelfocacci@gmail.com>
+Date:   Fri Oct 14 15:05:23 2022 -0400
+
+    Process data should handle data of any length #13
+
+commit 17c918b9e45f79c6ba7eb6ed42765b5e43c09281
+Merge: 1d55bf7 34ee472
+Author: Michael Focacci <michaelfocacci@gmail.com>
+Date:   Fri Oct 14 02:23:44 2022 -0400
+
+    Merge branch 'dev' into tests
+    Merge dev into tests to include all updated code for testing #13
+
+commit 34ee472ca2734c502bc8d4a1247ffb2961bb113d
+Author: Michael Focacci <michaelfocacci@gmail.com>
+Date:   Fri Oct 14 02:10:54 2022 -0400
+
+    Align dropdown right to match mock-up #23
+
+commit 748adf2134cd3abe5bbbde07bda270eb32fe0359
+Author: Michael Focacci <michaelfocacci@gmail.com>
+Date:   Fri Oct 14 02:10:23 2022 -0400
+
+    Update table style to match mock-up #23
+
+commit 9a7b6efd796e5c6d6bbc32943e2090a343747202
+Author: Michael Focacci <michaelfocacci@gmail.com>
+Date:   Fri Oct 14 00:04:37 2022 -0400
+
+    Update imports #25
+
+commit 560862742294bd94bb56de01bfb35ffb342b1423
+Author: Michael Focacci <michaelfocacci@gmail.com>
+Date:   Fri Oct 14 00:04:27 2022 -0400
+
+    Move tests to test folder #25
+
+commit d627e281fa670a2b17727650239e00b44476988b
+Author: Michael Focacci <michaelfocacci@gmail.com>
+Date:   Fri Oct 14 00:04:14 2022 -0400
+
+    Move stylesheets to css folder #25
+
+commit 1c4e7e7da7ca6dc5686b7f0ddba80d615126b292
+Author: Michael Focacci <michaelfocacci@gmail.com>
+Date:   Fri Oct 14 00:03:57 2022 -0400
+
+    Move components to components folder #25
+
+commit 670ffbf46b1546afa3d2d8fbb4b2bc570b436462
+Author: Michael Focacci <michaelfocacci@gmail.com>
+Date:   Thu Oct 13 23:54:56 2022 -0400
+
+    Import style sheets #23
+
+commit ae5e75fdfdfa6088d9c135a051ea24394cec9620
+Author: Michael Focacci <michaelfocacci@gmail.com>
+Date:   Thu Oct 13 23:54:46 2022 -0400
+
+    Style data table #23
+
+commit cac0e84627df770a1d79eb13f72dd9ac8726f101
+Author: Michael Focacci <michaelfocacci@gmail.com>
+Date:   Thu Oct 13 23:54:33 2022 -0400
+
+    Style dropdown section #23
+
+commit ca18b00ebcdaa18a41bc533bd2fb11f92298f9a9
+Author: Michael Focacci <michaelfocacci@gmail.com>
+Date:   Thu Oct 13 23:54:19 2022 -0400
+
+    Style summary section #23
+
+commit 6919bc521b733a17f982088057a3a7c4c16a6f09
+Author: Michael Focacci <michaelfocacci@gmail.com>
+Date:   Thu Oct 13 23:53:40 2022 -0400
+
+    Add background color and split top container #23
+
+commit 0b3581bf4e1081e3940c779e5e9dbbba364e9ff3
+Author: Michael Focacci <michaelfocacci@gmail.com>
+Date:   Thu Oct 13 23:53:01 2022 -0400
+
+    Remove margin from body #23
+
+commit c2f71894926116f32e4ee3fc4abc45f8c3867580
+Author: Michael Focacci <michaelfocacci@gmail.com>
+Date:   Thu Oct 13 23:01:11 2022 -0400
+
+    Short description of the project #21
+
+commit e2bc541d523f368a7ee1820b1a93b4f238e82faa
+Author: Michael Focacci <michaelfocacci@gmail.com>
+Date:   Thu Oct 13 23:00:28 2022 -0400
+
+    Add link to GitHub repository #21
+
+commit 947ef4e03ceb4c4fedabea942e6caa3f6a1b19bd
+Author: Michael Focacci <michaelfocacci@gmail.com>
+Date:   Thu Oct 13 21:28:29 2022 -0400
+
+    Add figma flow chart #22
+
+commit 1d55bf77dc307bf445080f84cd685b1c80e3009e
+Merge: a0678f6 73a1e1d
+Author: Michael Focacci <michaelfocacci@gmail.com>
+Date:   Thu Oct 13 20:17:33 2022 -0400
+
+    Merge dev into tests to include all updated code for testing
+
+commit 73a1e1da644af186697f22aa42a2da9255602a6b
+Author: Michael Focacci <michaelfocacci@gmail.com>
+Date:   Thu Oct 13 20:06:45 2022 -0400
+
+    Add unique key to each table row #20
+
+commit a0789ff3d9d52ba5f9e4311b16bafda207ecc14c
+Author: Michael Focacci <michaelfocacci@gmail.com>
+Date:   Thu Oct 13 20:06:26 2022 -0400
+
+    Import uuid module #20
+
+commit fbedac3ee842a05c85020b82b3364cfc0525c31d
+Author: Michael Focacci <michaelfocacci@gmail.com>
+Date:   Thu Oct 13 20:05:05 2022 -0400
+
+    Generate unique key for each dropdown option object #19
+
+commit cca0744bb9c19f3a58c5c319d24c84dd58e67481
+Author: Michael Focacci <michaelfocacci@gmail.com>
+Date:   Thu Oct 13 20:04:39 2022 -0400
+
+    Import uuid module #19
+
+commit 642923f2d61951199e657cb6653485af351d6cc5
+Author: Michael Focacci <michaelfocacci@gmail.com>
+Date:   Thu Oct 13 20:04:09 2022 -0400
+
+    Install uuid module to generate unique keys #19
+
+commit 04aaf26903557cd367da31f3dab0885bb368e947
+Author: Michael Focacci <michaelfocacci@gmail.com>
+Date:   Thu Oct 13 19:38:02 2022 -0400
+
+    Update equality operators to type check #18
+
+commit 19a3ab3cc864bd0fb0dddc919d9f6ba30e370824
+Author: Michael Focacci <michaelfocacci@gmail.com>
+Date:   Thu Oct 13 19:36:38 2022 -0400
+
+    Add all required dependencies to effect hooks #18
+
+commit 516a031dac72cb54ef3a44b871dcee78d278cc1d
+Author: Michael Focacci <michaelfocacci@gmail.com>
+Date:   Thu Oct 13 19:15:26 2022 -0400
+
+    Final column should display percentage of selected segment, else "%" #16
+
+commit 2175d2b84a660055c766da12a17f919ef7bb4931
+Author: Michael Focacci <michaelfocacci@gmail.com>
+Date:   Thu Oct 13 19:14:23 2022 -0400
+
+    Pass selected segment in props to Table #16
+
+commit 35c917463cb94756d2e139554966f9a9047e966f
+Author: Michael Focacci <michaelfocacci@gmail.com>
+Date:   Thu Oct 13 19:13:38 2022 -0400
+
+    Move helper functions to utils.js for use in all components #16
+
+commit 8eb39ac79e736d8153002d8db350ed1835433b6e
+Author: Michael Focacci <michaelfocacci@gmail.com>
+Date:   Thu Oct 13 16:59:43 2022 -0400
+
+    Add logic to handle default empty selection #15
+
+commit 7d9ef6da9ee35f751be7dd50fb898ea2d07eaa6d
+Author: Michael Focacci <michaelfocacci@gmail.com>
+Date:   Thu Oct 13 16:59:12 2022 -0400
+
+    Format percentages before setting them as state #15
+
+commit c84294279ebe04d16ce7be5693f9e5a82a7544f1
+Author: Michael Focacci <michaelfocacci@gmail.com>
+Date:   Thu Oct 13 16:46:11 2022 -0400
+
+    Display voter count and percentage in summary line 2 #15
+
+commit 3c6c10b908245262e84509266e3718d6c1afb0f0
+Author: Michael Focacci <michaelfocacci@gmail.com>
+Date:   Thu Oct 13 16:45:41 2022 -0400
+
+    Update selected segment percentage on segment voter count change #15
+
+commit bad925f8c27bec3809f806c883c969d17b6c6091
+Author: Michael Focacci <michaelfocacci@gmail.com>
+Date:   Thu Oct 13 16:45:08 2022 -0400
+
+    Update selected segment count on selected segment change #15
+
+commit 017d5b69934ab32594e91462d993d6d264fc2dc5
+Author: Michael Focacci <michaelfocacci@gmail.com>
+Date:   Thu Oct 13 16:28:09 2022 -0400
+
+    Selected segment displayed on second line of summary #15
+
+commit 64ac9332e5105890052a103362b3c1f90fde3362
+Author: Michael Focacci <michaelfocacci@gmail.com>
+Date:   Thu Oct 13 16:27:36 2022 -0400
+
+    useEffect hook listens to segment prop and updates state #15
+
+commit f2eb4f370d959cfd6423c966ea1d174dca717c85
+Author: Michael Focacci <michaelfocacci@gmail.com>
+Date:   Thu Oct 13 16:26:46 2022 -0400
+
+    Update setters in loading effect #15
+
+commit 98094561a4d72e59146b1d57c1f11919c714e5bb
+Author: Michael Focacci <michaelfocacci@gmail.com>
+Date:   Thu Oct 13 16:25:57 2022 -0400
+
+    Update state hooks for both types of voter segments #15
+    
+    The first type of voter segment is the top segment. These state variables start with the prefix `top`
+    
+    The second type of voter segment is that which is selected from the dropdown menu. These state variables start with the prefix `sel`
+
+commit 1dbb195e643476cb1fbf6432902c9839f5fccd34
+Author: Michael Focacci <michaelfocacci@gmail.com>
+Date:   Thu Oct 13 16:23:56 2022 -0400
+
+    Add `segment` parameter to Summary component #15
+
+commit 3d29a745334203b4c98e952dc22a28e65a2d7404
+Author: Michael Focacci <michaelfocacci@gmail.com>
+Date:   Thu Oct 13 16:22:17 2022 -0400
+
+    Pass dropdown selection to Summary component #15
+
+commit ce95d32c1168e6d7fcaad9fcfe3382966cc6241f
+Author: Michael Focacci <michaelfocacci@gmail.com>
+Date:   Thu Oct 13 15:56:51 2022 -0400
+
+    Include Dropdown component in app with all necessary properties #14
+
+commit 27a805bee0d84e3e601f2e6c970a9c4c314a3536
+Author: Michael Focacci <michaelfocacci@gmail.com>
+Date:   Thu Oct 13 15:55:59 2022 -0400
+
+    handleDropdownChange updates dropdownSelection hook #14
+
+commit a0f35629d1c0f807ed401fe6e984e389b47891ae
+Author: Michael Focacci <michaelfocacci@gmail.com>
+Date:   Thu Oct 13 15:55:19 2022 -0400
+
+    DropdownOptions list allows Dropdown to populate #14
+
+commit 9d637785df0f566236bd31d65a6d0a4ee988b065
+Author: Michael Focacci <michaelfocacci@gmail.com>
+Date:   Thu Oct 13 15:54:31 2022 -0400
+
+    Add dropdown selection state hook #14
+    
+    This hook will allow the app to display the appropriate values in other sub components
+
+commit 978f70fabeb7acdf90153c1876b972a96f505c6d
+Author: Michael Focacci <michaelfocacci@gmail.com>
+Date:   Thu Oct 13 15:53:07 2022 -0400
+
+    Import dropdown component #14
+
+commit 5322e95225a9c0cc2e92e32888948d6e8d367fdc
+Author: Michael Focacci <michaelfocacci@gmail.com>
+Date:   Thu Oct 13 15:52:53 2022 -0400
+
+    Create new dropdown component #14
+
+commit 071d6c2d0d4f55456e02f7b47f0f0f360d064cdb
+Author: Michael Focacci <michaelfocacci@gmail.com>
+Date:   Thu Oct 13 14:58:50 2022 -0400
+
+    Update imports and component names #17
+
+commit 6dcf1859b3d242822d08d3341c7f09f0d8ed82cc
+Author: Michael Focacci <michaelfocacci@gmail.com>
+Date:   Thu Oct 13 14:58:24 2022 -0400
+
+    Rename `Section2` to `Table` #17
+
+commit 3e93cc9612633d08bbb4c0506c389038730b1347
+Author: Michael Focacci <michaelfocacci@gmail.com>
+Date:   Thu Oct 13 14:58:10 2022 -0400
+
+    Rename `Section1` to `Summary` #17
+
+commit a0678f6d95dde97226c0522406b9a88e9dbe8968
+Author: Michael Focacci <michaelfocacci@gmail.com>
+Date:   Thu Oct 13 14:45:11 2022 -0400
+
+    Test prototypes steps 1-3 #13
+
+commit 80b58d9a2635d7b6134c7ff9a0a83d4be3eb5557
+Author: Michael Focacci <michaelfocacci@gmail.com>
+Date:   Thu Oct 13 14:24:27 2022 -0400
+
+    Use segTitleMap in text to display appropriate names #11
+
+commit 8b13e1c1a95d6be69c563d061819005553eea565
+Author: Michael Focacci <michaelfocacci@gmail.com>
+Date:   Thu Oct 13 14:23:24 2022 -0400
+
+    segtitleMap maps data segment name to appropriate viewable name #11
+    
+    Example:
+    dem -> Democrat
+    female -> Female
+    other_race -> Other Race
+
+commit 140c580399c6142c417381928a7581987c0e2b53
+Author: Michael Focacci <michaelfocacci@gmail.com>
+Date:   Thu Oct 13 14:17:32 2022 -0400
+
+    Use formatAsPercent function in text #11
+
+commit 50f48602194a7a65f3cfc53e20801a7c4047fe9e
+Author: Michael Focacci <michaelfocacci@gmail.com>
+Date:   Thu Oct 13 14:17:17 2022 -0400
+
+    formatAsPercent formats percentage value #11
+    
+    Percentage value is formatted to 2 decimal places and the "%" symbol
+
+commit 3271b40df801a9e728d8f47d65a1f3d41bf6759f
+Author: Michael Focacci <michaelfocacci@gmail.com>
+Date:   Thu Oct 13 14:15:37 2022 -0400
+
+    Multiply fraction by 100 to obtain percentage value #11
+
+commit d802fe6b7ba89cc24d1356752eddca152fa7fe4b
+Author: Michael Focacci <michaelfocacci@gmail.com>
+Date:   Thu Oct 13 14:09:56 2022 -0400
+
+    Use state variables to display data in text #11
+
+commit b655ffe07a25f13b77f586dd10b2f7970b67d832
+Author: Michael Focacci <michaelfocacci@gmail.com>
+Date:   Thu Oct 13 14:09:33 2022 -0400
+
+    Compute the appropriate data to display in summary #11
+
+commit 671982f23d5d068e53876c5cb1b0275ef3cd5684
+Author: Michael Focacci <michaelfocacci@gmail.com>
+Date:   Thu Oct 13 14:01:43 2022 -0400
+
+    Use hooks to store necessary displayed data in state #11
+
+commit c848133a0296921a25135ccce1680e8d00e7415d
+Author: Michael Focacci <michaelfocacci@gmail.com>
+Date:   Thu Oct 13 13:59:53 2022 -0400
+
+    Import useState and useEffect #11
+
+commit 701d377a4b4f7b75a9113c9165f5195ba2f85009
+Author: Michael Focacci <michaelfocacci@gmail.com>
+Date:   Thu Oct 13 13:58:58 2022 -0400
+
+    Section1 accepts a parameter containing segment totals #11
+
+commit 4e76ce8df3845a54ca9447a0be98a73c16e15ae5
+Author: Michael Focacci <michaelfocacci@gmail.com>
+Date:   Thu Oct 13 13:56:57 2022 -0400
+
+    "Totals" row should be passed to Section1 component #11
+
+commit 67ad63c8817a5bdbffb585ee46a3c6e6d0db6a30
+Author: Michael Focacci <michaelfocacci@gmail.com>
+Date:   Thu Oct 13 13:56:12 2022 -0400
+
+    Retrieve final row object from list #11
+    
+    List.slice() function returns a list, so I have to obtain the object at index 0
+
+commit 43e0182e58e3b087c2c266ec753d583936eea29b
+Author: Michael Focacci <michaelfocacci@gmail.com>
+Date:   Wed Oct 12 18:10:00 2022 -0400
+
+    Add TableBody component with row data property #10
+
+commit 2caf01f75000784beadeff9dae68b945a5bc0a4e
+Author: Michael Focacci <michaelfocacci@gmail.com>
+Date:   Wed Oct 12 18:08:52 2022 -0400
+
+    Create component for TableBody #10
+    
+    This component maps each row from the JSON data to a HTML table row
+
+commit 555f680f0a8a80a9e9c9584a63ed207599a9f535
+Author: Michael Focacci <michaelfocacci@gmail.com>
+Date:   Wed Oct 12 18:07:17 2022 -0400
+
+    Pass row data as properties to table #10
+
+commit ccbd4171b5d6f785bcdc50279b108107f648cd19
+Author: Michael Focacci <michaelfocacci@gmail.com>
+Date:   Wed Oct 12 18:06:47 2022 -0400
+
+    Fetch data from url and set states #10
+
+commit c1bf128a91e547a87f4173798ebfac4cc71e9b25
+Author: Michael Focacci <michaelfocacci@gmail.com>
+Date:   Wed Oct 12 18:05:53 2022 -0400
+
+    State hooks for row data and segment totals #10
+
+commit 722bcf3d1ee779821f98e8338b3cc23b36947ffa
+Author: Michael Focacci <michaelfocacci@gmail.com>
+Date:   Wed Oct 12 16:06:35 2022 -0400
+
+    Fetch data and print to console #9
+
+commit 52cef61d57bbe533f3815a1662a4566adaf897cc
+Author: Michael Focacci <michaelfocacci@gmail.com>
+Date:   Wed Oct 12 15:54:14 2022 -0400
+
+    Add "thead" block to table #12
+
+commit 0a2728ea783688ec50c6be88d0a979bcb0d12f48
+Author: Michael Focacci <michaelfocacci@gmail.com>
+Date:   Wed Oct 12 14:11:12 2022 -0400
+
+    Import Section 2 and place inside app #7
+
+commit 3c8a720774cef69c0905d1ff3b74660781304464
+Author: Michael Focacci <michaelfocacci@gmail.com>
+Date:   Wed Oct 12 14:10:56 2022 -0400
+
+    Create function returning Section 2 table #7
+
+commit a2bf1bf46f86498e6c72edd66b046ab9b697daf4
+Author: Michael Focacci <michaelfocacci@gmail.com>
+Date:   Wed Oct 12 13:54:18 2022 -0400
+
+    Import Section1 and place inside app #6
+
+commit 3a3b3b257505bf0d28f9863c4c933d31d4dc6994
+Author: Michael Focacci <michaelfocacci@gmail.com>
+Date:   Wed Oct 12 13:53:57 2022 -0400
+
+    Create function returning all Section 1 text #6
+
+commit 2908c005768e59d85ba801ba0a863408e8fea59a
+Author: Michael Focacci <michaelfocacci@gmail.com>
+Date:   Wed Oct 12 13:40:35 2022 -0400
+
+    Update page title #5
+
+commit 116a5eb92ec0a580e691bb0989f2708b0eb96064
+Author: Michael Focacci <michaelfocacci@gmail.com>
+Date:   Wed Oct 12 13:39:09 2022 -0400
+
+    Remove unused imports #8
+
+commit 1581ac6fc04128f4e4760b2b082f4523497cfaca
+Author: Michael Focacci <michaelfocacci@gmail.com>
+Date:   Mon Oct 10 23:46:26 2022 -0400
+
+    Add contribution instructions to README #4
+
+commit 05b7e3dbe1a7bfa792a933f5adeab86209d4b04f
+Author: Michael Focacci <michaelfocacci@gmail.com>
+Date:   Mon Oct 10 23:30:26 2022 -0400
+
+    App performance not important for this project #3
+
+commit 6fdeabe63b6a0c4a29571b91344a8419b686d751
+Author: Michael Focacci <michaelfocacci@gmail.com>
+Date:   Mon Oct 10 23:28:46 2022 -0400
+
+    Remove unneeded styling files #3
+
+commit 132b9037e7d970929258dba39e435000cdc1616e
+Author: Michael Focacci <michaelfocacci@gmail.com>
+Date:   Mon Oct 10 23:03:06 2022 -0400
+
+    Created REQUIREMENTS.md #2
+    
+    REQUIREMENTS.md contains all of the project requirements as listed in George Tempel's email
+
+commit 54b07fdcbbb73d0aebfae3b3d0b1a4348190293d
+Author: Michael Focacci <michaelfocacci@gmail.com>
+Date:   Mon Oct 10 22:38:11 2022 -0400
+
+    Initialize React app and update README heading #1
+
+commit 36ff04d438fa6c7e572b7723843f8e56276843d3
+Author: Michael Focacci <focacci.hyo@gmail.com>
+Date:   Mon Oct 10 17:44:56 2022 -0400
+
+    Initial commit
