@@ -10,7 +10,7 @@ export default function Summary({ totals, segment }) {
     const [topSegVoterCount, setTopSegVoterCount] = useState(null);
     const [topSegVoterPercent, setTopSegVoterPercent] = useState(null);
 
-    const [selSeg, setSelSeg] = useState(segment);
+    const [selSeg, setSelSeg] = useState("");
     const [selSegVoterCount, setSelSegVoterCount] = useState(null);
     const [selSegVoterPercent, setSelSegVoterPercent] = useState(null);
 
