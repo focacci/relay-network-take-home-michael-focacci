@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { segTitleMap, formatAsPercent } from './utils';
+import { segTitleMap, formatAsPercent } from '../utils';
+import '../css/Summary.css';
 
 export default function Summary({ totals, segment }) {
 
@@ -9,7 +10,7 @@ export default function Summary({ totals, segment }) {
     const [topSegVoterCount, setTopSegVoterCount] = useState(null);
     const [topSegVoterPercent, setTopSegVoterPercent] = useState(null);
 
-    const [selSeg, setSelSeg] = useState(segment);
+    const [selSeg, setSelSeg] = useState("");
     const [selSegVoterCount, setSelSegVoterCount] = useState(null);
     const [selSegVoterPercent, setSelSegVoterPercent] = useState(null);
 
@@ -38,7 +39,9 @@ export default function Summary({ totals, segment }) {
     }, [totals, topSeg, topSegVoterCount, totalVoters]);
 
     useEffect(() => {
-        setSelSeg(segment);
+        if (segment) {
+            setSelSeg(segment);
+        }
     }, [segment]);
 
     /* The following effect hooks use if-else statements to handle the default empty selection */
@@ -61,9 +64,9 @@ export default function Summary({ totals, segment }) {
     }, [totalVoters, selSeg, selSegVoterCount]);
 
     return (
-        <div>
-            <p>Top Segment of All Voters: {segTitleMap[topSeg]} - {topSegVoterCount} - {topSegVoterPercent}</p>
-            <p>Percentage of All Voters that are {segTitleMap[selSeg]} - {selSegVoterCount} - {selSegVoterPercent}</p>
+        <div className="Summary">
+            <p id="topSeg">Top Segment of All Voters: {segTitleMap[topSeg]} - {topSegVoterCount} - {topSegVoterPercent}</p>
+            <p id="selSeg">Percentage of All Voters that are {segTitleMap[selSeg]} - {selSegVoterCount} - {selSegVoterPercent}</p>
         </div>
     );
 }

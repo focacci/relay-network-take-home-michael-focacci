@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import Summary from './Summary';
-import Table from './Table';
-import Dropdown from './Dropdown';
+import Summary from './components/Summary';
+import Table from './components/Table';
+import Dropdown from './components/Dropdown';
+import './css/App.css';
 
 function App() {
 
@@ -31,8 +32,9 @@ function App() {
     const url = "https://phl.carto.com/api/v2/sql?q=SELECT+*+FROM+qualified_voter_listing_2018_primary_by_ward&filename=qualified_voter_listing_2018_primary_by_ward&format=json&skipfields=cartodb_id";
 
     const processData = (data) => {
-      var rows = data["rows"].slice(0, 66);
-      var totals = data["rows"].slice(66)[0];
+      let len = data["rows"].length - 1;
+      var rows = data["rows"].slice(0, len);
+      var totals = data["rows"].slice(len)[0];
       setRows(rows);
       setTotals(totals);
     }
@@ -54,13 +56,15 @@ function App() {
 
   return (
     <div className="App">
-      <Dropdown 
-        label="Select a voter segment"
+      <div className="TopContainer">
+        <Summary totals={totals} segment={dropdownSelection}/>
+        <Dropdown 
+        label="Select a voter segment "
         value={dropdownSelection}
         options={dropdownOptions}
         onChange={handleDropdownChange}
-      />
-      <Summary totals={totals} segment={dropdownSelection}/>
+        />
+      </div>
       <Table rows={rows} segment={dropdownSelection}/>
     </div>
   );

@@ -1,0 +1,10 @@
+.Summary {
+    margin-left: 5%;
+    margin-right: auto;
+    margin-top: 10px;
+    width: 50%;
+    display: table-cell;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+}

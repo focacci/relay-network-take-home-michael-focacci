@@ -1,15 +1,15 @@
 import React from 'react';
-import { formatAsPercent } from './utils';
+import { formatAsPercent } from '../utils';
 import { v4 as uuidv4 } from 'uuid';
+import '../css/Table.css';
 
 function TableBody({rows, segment}) {
-
     if (rows) {
         return (
             rows.map(row =>
                 {
                     return (
-                        <tr key={uuidv4()}>
+                        <tr className="TableRow" key={uuidv4()}>
                             <td>{row["ward"]}</td>
                             <td>{row["rep"]}</td>
                             <td>{row["dem"]}</td>
@@ -22,7 +22,7 @@ function TableBody({rows, segment}) {
                             <td>{row["white"]}</td>
                             <td>{row["other_race"]}</td>
                             <td>{row["total"]}</td>
-                            <td>{(segment === "") ? "%" : formatAsPercent((row[segment]/row["total"])*100)}</td>
+                            <td data-testid={row["ward"].concat('percent')}>{(segment === "") ? "%" : formatAsPercent((row[segment]/row["total"])*100)}</td>
                         </tr> 
                     )
                 }
@@ -35,9 +35,9 @@ export default function Table({ rows, segment }) {
 
     return (
         <div>
-            <table>
+            <table className="Table">
                 <thead>
-                    <tr>
+                    <tr className="TableHeader">
                         <th>Ward</th>
                         <th>Republican</th>
                         <th>Democrat</th>
@@ -53,7 +53,7 @@ export default function Table({ rows, segment }) {
                         <th>%</th>
                     </tr>
                 </thead>
-                <tbody>
+                <tbody data-testid="tableBody">
                     <TableBody rows={rows} segment={segment} />
                 </tbody>
             </table>
