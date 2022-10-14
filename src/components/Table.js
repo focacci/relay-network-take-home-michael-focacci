@@ -4,7 +4,6 @@ import { v4 as uuidv4 } from 'uuid';
 import '../css/Table.css';
 
 function TableBody({rows, segment}) {
-
     if (rows) {
         return (
             rows.map(row =>
@@ -23,7 +22,7 @@ function TableBody({rows, segment}) {
                             <td>{row["white"]}</td>
                             <td>{row["other_race"]}</td>
                             <td>{row["total"]}</td>
-                            <td>{(segment === "") ? "%" : formatAsPercent((row[segment]/row["total"])*100)}</td>
+                            <td data-testid={row["ward"].concat('percent')}>{(segment === "") ? "%" : formatAsPercent((row[segment]/row["total"])*100)}</td>
                         </tr> 
                     )
                 }
@@ -54,7 +53,7 @@ export default function Table({ rows, segment }) {
                         <th>%</th>
                     </tr>
                 </thead>
-                <tbody>
+                <tbody data-testid="tableBody">
                     <TableBody rows={rows} segment={segment} />
                 </tbody>
             </table>

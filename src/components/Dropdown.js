@@ -6,9 +6,9 @@ export default function Dropdown({ label, value, options, onChange }) {
     return (
         <label className="Dropdown">
             {label}
-            <select className="DropdownMenu" value={value} onChange={onChange}>
+            <select data-testid="select" className="DropdownMenu" value={value} onChange={onChange}>
                 {options.map((option) => (
-                    <option className="DropdownOption" key={uuidv4()} value={option.value}>{option.label}</option>
+                    <option data-testid="select-option" className="DropdownOption" key={uuidv4()} value={option.value}>{option.label}</option>
                 ))}
             </select>
         </label>
