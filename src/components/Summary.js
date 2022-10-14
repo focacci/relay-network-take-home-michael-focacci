@@ -65,8 +65,8 @@ export default function Summary({ totals, segment }) {
 
     return (
         <div className="Summary">
-            <p>Top Segment of All Voters: {segTitleMap[topSeg]} - {topSegVoterCount} - {topSegVoterPercent}</p>
-            <p>Percentage of All Voters that are {segTitleMap[selSeg]} - {selSegVoterCount} - {selSegVoterPercent}</p>
+            <p id="topSeg">Top Segment of All Voters: {segTitleMap[topSeg]} - {topSegVoterCount} - {topSegVoterPercent}</p>
+            <p id="selSeg">Percentage of All Voters that are {segTitleMap[selSeg]} - {selSegVoterCount} - {selSegVoterPercent}</p>
         </div>
     );
 }
