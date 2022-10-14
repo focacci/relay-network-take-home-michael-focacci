@@ -9,7 +9,7 @@ function TableBody({rows, segment}) {
             rows.map(row =>
                 {
                     return (
-                        <tr>
+                        <tr key={uuidv4()}>
                             <td>{row["ward"]}</td>
                             <td>{row["rep"]}</td>
                             <td>{row["dem"]}</td>
