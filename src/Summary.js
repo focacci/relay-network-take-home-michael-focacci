@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { segTitleMap, formatAsPercent } from './utils';
+import './Summary.css';
 
 export default function Summary({ totals, segment }) {
 
@@ -61,7 +62,7 @@ export default function Summary({ totals, segment }) {
     }, [totalVoters, selSeg, selSegVoterCount]);
 
     return (
-        <div>
+        <div className="Summary">
             <p>Top Segment of All Voters: {segTitleMap[topSeg]} - {topSegVoterCount} - {topSegVoterPercent}</p>
             <p>Percentage of All Voters that are {segTitleMap[selSeg]} - {selSegVoterCount} - {selSegVoterPercent}</p>
         </div>

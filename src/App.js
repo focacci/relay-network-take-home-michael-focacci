@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Summary from './Summary';
 import Table from './Table';
 import Dropdown from './Dropdown';
+import './App.css';
 
 function App() {
 
@@ -54,13 +55,15 @@ function App() {
 
   return (
     <div className="App">
-      <Dropdown 
-        label="Select a voter segment"
+      <div className="TopContainer">
+        <Summary totals={totals} segment={dropdownSelection}/>
+        <Dropdown 
+        label="Select a voter segment "
         value={dropdownSelection}
         options={dropdownOptions}
         onChange={handleDropdownChange}
-      />
-      <Summary totals={totals} segment={dropdownSelection}/>
+        />
+      </div>
       <Table rows={rows} segment={dropdownSelection}/>
     </div>
   );
