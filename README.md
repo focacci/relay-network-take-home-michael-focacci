@@ -7,9 +7,34 @@
 # About
 This project was assigned to me by [George Tempel](https://www.linkedin.com/in/georgetempel/) as part of the interview process for the role of Software Engineer at [Relay Network](https://www.relaynetwork.com/).
 
-My objective with this project is to demonstrate that my ability to organize, plan, and execute will provide exceptional value to the development team at Relay Network. As my prior experience with [ReactJS](https://reactjs.org/) is limited, this project is also a demonstration of my proficiency to learn independently via [documentation](https://reactjs.org/docs/getting-started.html) and tutorials on a tight deadline.
+My objective with this project is to demonstrate that my ability to plan, organize, and execute will provide exceptional value to the development team at Relay Network. 
 
-Assigned to me on Monday, October 10, 2022, I am on track to submit this assignment complete with mock-up diagrams, test scripts, and appropriate documentation by Friday, October 14, 2022.
+As my prior experience with [ReactJS](https://reactjs.org/) is limited, this project is also a demonstration of my proficiency to learn independently via [documentation](https://reactjs.org/docs/getting-started.html) and tutorials on a tight deadline.
+
+How I demonstrated such skills:
+- Plan
+
+    The first step I took in this process was thoroughly review the project requirements. It is imperative to have a complete understanding of my responsibilities and expectations at the beginning of the development process.
+
+    Next I used Figma to draw a mock-up flow chart illustrating my end goal. This provides clarity on what specific components are required for the project, reducing the probability of unnecessary complexity.
+
+- Organize
+
+    Because this project was broken down into five (5) steps, I created milestone labels for Steps 1 - 5 on GitHub. Each milestone had an associated planned deadline, allowing myself (and any hypothetical contributors) to understand the timeframe in which we are working.
+
+    Before writing any code, I enumerated my planned steps as GitHub Issues. Each Issue was tagged with its associated milestone, type (bug, documentation, enhancement, etc), and assignee. Issues would be closed once completed.
+    
+    I also used a professional branching scheme that I had learned at University in my capstone course. `dev` branched off of `main`, containing all complete features ready for next release. Off of `dev` spawned branches for each feature (milestone) such as `step-1`, `step-2`, etc, and hotfixes with an informative name and the associated Issue number (such as `eslint-warnings-issue#18`).
+
+    All of my commits were localized to a specific Issue, with informative messages describing my change and a reference to its Issue number.
+
+- Execute
+
+    After planning my approach, I chipped away at the project one Issue at a time. Each commit was preceeded by a local test run, where I ensure the project compiled without error and displayed as expected in my browser.
+
+    Each day I completed a new step, each one completed on time per my schedule.
+
+    Before submission, I double and triple-checked every requirement and ensured they were completed to the best of my ability.
 
 <br></br>
 
