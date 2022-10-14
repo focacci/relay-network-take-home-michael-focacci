@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import Summary from './Summary';
-import Table from './Table';
-import Dropdown from './Dropdown';
-import './App.css';
+import Summary from './components/Summary';
+import Table from './components/Table';
+import Dropdown from './components/Dropdown';
+import './css/App.css';
 
 function App() {
 
