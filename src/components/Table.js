@@ -1,6 +1,7 @@
 import React from 'react';
-import { formatAsPercent } from './utils';
+import { formatAsPercent } from '../utils';
 import { v4 as uuidv4 } from 'uuid';
+import '../css/Table.css';
 
 function TableBody({rows, segment}) {
 
@@ -9,7 +10,7 @@ function TableBody({rows, segment}) {
             rows.map(row =>
                 {
                     return (
-                        <tr key={uuidv4()}>
+                        <tr className="TableRow" key={uuidv4()}>
                             <td>{row["ward"]}</td>
                             <td>{row["rep"]}</td>
                             <td>{row["dem"]}</td>
@@ -35,9 +36,9 @@ export default function Table({ rows, segment }) {
 
     return (
         <div>
-            <table>
+            <table className="Table">
                 <thead>
-                    <tr>
+                    <tr className="TableHeader">
                         <th>Ward</th>
                         <th>Republican</th>
                         <th>Democrat</th>

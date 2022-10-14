@@ -1,13 +1,14 @@
 import React from 'react';
 import { v4 as uuidv4 } from 'uuid';
+import '../css/Dropdown.css';
 
 export default function Dropdown({ label, value, options, onChange }) {
     return (
-        <label>
+        <label className="Dropdown">
             {label}
-            <select value={value} onChange={onChange}>
+            <select className="DropdownMenu" value={value} onChange={onChange}>
                 {options.map((option) => (
-                    <option key={uuidv4()} value={option.value}>{option.label}</option>
+                    <option className="DropdownOption" key={uuidv4()} value={option.value}>{option.label}</option>
                 ))}
             </select>
         </label>
