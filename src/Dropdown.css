@@ -1,0 +1,14 @@
+.Dropdown {
+    margin-right: auto;
+    margin-left: 5%;
+    margin-top: auto;
+    margin-bottom: auto;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+}
+
+.DropdownMenu {
+    padding: 5px;
+    text-align: center;
+}
