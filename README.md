@@ -3,6 +3,16 @@
 ## [Link to GitHub Repository](https://github.com/focacci/relay-network-take-home-michael-focacci)
 <br></br>
 
+# About
+This project was assigned to me by [George Tempel](https://www.linkedin.com/in/georgetempel/) as part of the interview process for the role of Software Engineer at [Relay Network](https://www.relaynetwork.com/).
+
+My objective with this project is to demonstrate that my ability to organize, plan, and execute will provide exceptional value to the development team at Relay Network. As my prior experience with [ReactJS](https://reactjs.org/) is limited, this project is also a demonstration of my proficiency to learn independently via [documentation](https://reactjs.org/docs/getting-started.html) and tutorials on a tight deadline.
+
+Assigned to me on Monday, October 10, 2022, I am on track to submit this assignment complete with mock-up diagrams, test scripts, and appropriate documentation by Friday, October 14, 2022.
+
+Please find the project requirements [here](REQUIREMENTS.md).
+<br></br>
+
 # Contributing
 
 1. [Fork this repository](https://docs.github.com/en/get-started/quickstart/fork-a-repo#fork-an-example-repository)
